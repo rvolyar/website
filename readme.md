@@ -9,7 +9,7 @@ rm -rf laravel
 ```
 
 ```
-sudo vi /etc/apache2/sites-enabled/001-cloud9.conf
+sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
 
 // Change this line
 DocumentRoot /home/ubuntu/workspace
