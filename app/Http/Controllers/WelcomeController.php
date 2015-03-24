@@ -33,7 +33,7 @@ class WelcomeController extends Controller {
 		
 	if(DB::connection()->getDatabaseName())
 	{
-   		echo "conncted sucessfully to database named ".DB::connection()->getDatabaseName();
+   		echo "conncted sucessfully to database named ".DB::connection()->getDatabaseName(); 
 	}
 
 }
