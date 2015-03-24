@@ -1,5 +1,6 @@
 ## Laravel PHP Framework for CTK
 
+The following commands are just for reference in the future. Ignore for now.
 ```
 composer create-project laravel/laravel ./laravel --prefer-dist
 shopt -s dotglob
