@@ -18,3 +18,11 @@ DocumentRoot /home/ubuntu/workspace
 DocumentRoot /home/ubuntu/workspace/public
 
 ```
+
+To setup your database connections, make a .env file in your root directory.
+Define all the databse variables as listed in the .env.example file.  We use this as we do not share the same passwords and it is easier to collaborate.  The .env file does not get pushed to git so your passwords are safe to your local environment.
+Here are the default cloud9 credentials:
+DB_HOST: 127.0.0.1
+DB_DATABASE= c9
+DB_USERNAME='your c9 username'
+DB_PASSWORD='blank'
