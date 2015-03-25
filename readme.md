@@ -18,6 +18,8 @@ DocumentRoot /home/ubuntu/workspace
 // To following
 DocumentRoot /home/ubuntu/workspace/public
 
+//Install all dependencies
+composer install
 ```
 
 To setup your database connections, make a .env file in your root directory.
