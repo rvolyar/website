@@ -1,7 +1,8 @@
 ## Laravel PHP Framework for CTK
 
 ### How to setup cloud9 with this project
-1. Open [your Dashboard](https://c9.io/dashboard.html)
+1. Make sure your cloud9 account is linked with github
+2. Open [your Dashboard](https://c9.io/dashboard.html)
 2. Select 'CREATE NEW WORKSPACE' and then 'Clone from URL'
 3. For the Source URL, use this repo's URL: http://github.com/Charles-T-King/website
 4. Make sure to select PHP workspace
