@@ -1,13 +1,17 @@
 ## Laravel PHP Framework for CTK
 
-### How to setup cloud9 with this project.  Create a php workspace and clone this repo (enter the url of this repo in the field).  Run the following commands in the terminal.
+### How to setup cloud9 with this project
+1. Open [your Dashboard](https://c9.io/dashboard.html)
+2. Select 'CREATE NEW WORKSPACE' and then 'Clone from URL'
+3. For the Source URL, use this repo's URL: http://github.com/Charles-T-King/website
+4. Make sure to select PHP workspace
 
-```
+``` shell
 shopt -s dotglob
 mv laravel/* ./
 rm -rf laravel
 
-//Edit the server config file
+// Edit the server config file
 sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
 
 // Change this line
@@ -36,7 +40,7 @@ After this, proceed to run this app as a PHP/Apache server and open the url give
 
 You now have this repo cloned to your c9 account.Further instruction will be given on how to contribute.
 
-Read up on these resources on how to use git effectively.
+# Read up on these resources on how to use git effectively.
 
 https://www.atlassian.com/git/tutorials/
 [Interactive git tutorial by github](https://try.github.io/levels/1/challenges/1) - Sign in first to track progress
