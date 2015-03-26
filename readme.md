@@ -8,8 +8,8 @@
 
 ``` shell
 shopt -s dotglob
-mv laravel/* ./ # move the contents of the laravel folder up
-rm -rf laravel # remove the now empty laravel folder
+mv website/* ./ # move the contents of the website folder up
+rm -rf laravel # remove the now empty website folder
 
 # Edit the server config file
 sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
