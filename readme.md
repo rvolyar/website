@@ -33,9 +33,11 @@ Define all the databse variables as listed in the .env.example file.  We use thi
 
 After this, proceed to run this app as a PHP/Apache server and open the url given to you by the server terminal.
 
+You should get a message in the browser saying "conncted sucessfully to database named c9".  If you get the message, you are all setup.  If that does not occur, check your steps and troubleshoot. If you still need help, post and issue and we'll help you.
+
 You now have this repo cloned to your c9 account.Further instruction will be given on how to contribute.
 
-# Read up on these resources on how to use git effectively.
+## Read up on these resources on how to use git effectively.
 
 [Tutorial by Atlassian, GitHub's main competitor](https://www.atlassian.com/git/tutorials/)
 [Interactive Tutorial by Github](https://try.github.io/levels/1/challenges/1) - Sign in first to track progress
