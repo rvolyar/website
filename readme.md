@@ -43,4 +43,5 @@ You now have this repo cloned to your c9 account.Further instruction will be giv
 # Read up on these resources on how to use git effectively.
 
 https://www.atlassian.com/git/tutorials/
+
 [Interactive git tutorial by github](https://try.github.io/levels/1/challenges/1) - Sign in first to track progress
