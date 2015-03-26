@@ -1,5 +1,7 @@
 ## Laravel PHP Framework for CTK
 
+[Meetings with Conor/Charles T. King](https://drive.google.com/open?id=0BxEuMs2jIxWfV0VNQ1ZzZFJpUkU&authuser=0)
+
 The following commands are just for reference in the future. Ignore for now.
 ```
 composer create-project laravel/laravel ./laravel --prefer-dist
