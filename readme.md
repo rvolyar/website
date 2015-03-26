@@ -9,9 +9,6 @@
 
 
 ``` shell
-~~shopt -s dotglob
-mv website/* ./ # move the contents of the website folder up
-rm -rf website # remove the now empty website folder~~
 
 # Edit the server config file.
 sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
