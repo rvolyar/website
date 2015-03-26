@@ -10,6 +10,7 @@
 
 ``` shell
 
+
 # Edit the server config file.
 sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
 # Change this line
@@ -43,4 +44,4 @@ You now have this repo cloned to your c9 account.Further instruction will be giv
 ### Read up on these resources on how to use git effectively.
 
 [Tutorial by Atlassian, GitHub's main competitor](https://www.atlassian.com/git/tutorials/)
-[Interactive Tutorial by Github](https://try.github.io/levels/1/challenges/1) - Sign in first to track progress
+[Interactive Tutorial by Github](https://try.github.io/levels/1/challenges/1) - Sign in at first to track progress.
