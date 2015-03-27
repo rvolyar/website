@@ -42,6 +42,8 @@ After this, open the file public/index.php and click the green run button to pro
 
 You should get a message in the browser saying "conncted sucessfully to database named c9".  If you get the message, you are all setup.  If that does not occur, check your steps and troubleshoot. If you still need help, post and issue and we'll help you.
 
+Remember to always work on the develop branch as master is production ready code.
+
 You now have this repo cloned to your c9 account.Further instruction will be given on how to contribute.
 
 ### Read up on these resources on how to use git effectively.
