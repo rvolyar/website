@@ -32,7 +32,7 @@ composer install
 To use the database(MySQL), we need to setup your database connections. Make a .env file in your root directory.
 Define all the databse variables as listed in the .env.example file.  We use this as we do not share the same passwords and it is easier to collaborate.  The .env file is gitignored and does not get pushed to git so your passwords are safe to your local environment.
 
-##### Here are the default cloud9 credentials:
+##### Here are the default cloud9 credentials to connect MySQL:
 * DB_HOST: 127.0.0.1
 * DB_DATABASE= c9
 * DB_USERNAME='your c9 username'
@@ -41,6 +41,8 @@ Define all the databse variables as listed in the .env.example file.  We use thi
 After this, open the file public/index.php and click the green run button to proceed to run this app as a PHP/Apache server.  Open the url given to you by the server terminal. Remember there's a difference between the Apache terminal and the bash terminal.
 
 You should get a message in the browser saying "conncted sucessfully to database named c9".  If you get the message, you are all setup.  If that does not occur, check your steps and troubleshoot. If you still need help, post and issue and we'll help you.
+
+Remember to always work on the develop branch as master is production ready code.
 
 You now have this repo cloned to your c9 account.Further instruction will be given on how to contribute.
 
