@@ -65,11 +65,9 @@
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
-		<div class="jumbotron" id="main">
-			<div class="container-fluid">
-				<h1>Welcome</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam neque libero, vestibulum nec augue eu, scelerisque maximus erat. Aliquam eu ante consectetur, tempus tortor elementum, feugiat dolor. Quisque et consequat nulla. Vestibulum volutpat eros sit amet pellentesque sodales.</p>
-			</div>
+		
+		<div class="container-fluid">
+			@yield('content');
 		</div>
 	</body>
 </html>
