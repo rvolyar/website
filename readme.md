@@ -3,17 +3,10 @@
 
 [Meetings with Conor/Charles T. King](https://drive.google.com/open?id=0BxEuMs2jIxWfV0VNQ1ZzZFJpUkU&authuser=0)
 
-The following commands are just for reference in the future. Ignore for now.
-```
-composer create-project laravel/laravel ./laravel --prefer-dist
-shopt -s dotglob
-mv laravel/* ./
-rm -rf laravel
-=======
 ### How to setup cloud9 with this project
 1. Open [your Dashboard](https://c9.io/dashboard.html)
 2. Select 'CREATE NEW WORKSPACE' and then 'Clone from URL'
-3. For the Source URL, use this repo's URL: http://github.com/Charles-T-King/website
+3. If you are just practicing, fork this repo and for the Source URL, use your forked repo's url.  If you are contributing to the acual site, us this repo's URL: http://github.com/Charles-T-King/website
 4. Make sure to select PHP workspace
 5. Enter the following commands via the terminal on the bottom of your screen.
 
