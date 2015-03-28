@@ -1,6 +1,5 @@
 <?php namespace App\Http\Controllers;
-use DB;
-class WelcomeController extends Controller {
+class ContactController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -30,12 +29,7 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		
-	if(DB::connection()->getDatabaseName())
-	{
-   		echo "conncted sucessfully to database named ".DB::connection()->getDatabaseName(); 
+		return "contact page";
 	}
-
-}
 
 }
