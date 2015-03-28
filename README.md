@@ -141,3 +141,18 @@ Laravel is actually a backend framework for PHP, but it comes with Blade, which 
 * [Quick Summary](http://laravel.com/docs/5.0/templates)
 * [Laracasts Video 2015](https://laracasts.com/series/laravel-5-fundamentals/episodes/5)
 * [Laracasts Video 2013](https://laracasts.com/series/laravel-from-scratch/episodes/6)
+
+### Backend Tutorials
+#### Languages
+##### PHP
+PHP is one of the most popular languages for backend development, but it is extremely ugly and a horrible mess to work with.
+[Codecademy Course](www.codecademy.com/tracks/php)
+
+#### Frameworks
+##### Laravel for PHP
+Laravel tries to solve some of the problems that PHP has with cleanliness and ease.
+* [Laravel Official Documentation](http://laravel.com/docs/5.0)
+* [Laracasts on the Official Website](https://laracasts.com/) has some paid content
+* [Laracasts Torrent](http://kickass.to/laracasts-laravel-5-from-scratch-2014-t9798375.html) from Kickass
+	* [Magnet Link](magnet:?xt=urn:btih:C6E3B62BC0AE5108FA5FCE576957890184B29B2D&dn=laracasts+laravel+5+from+scratch+2014&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce)
+	* [Torrent file](http://torcache.net/torrent/C6E3B62BC0AE5108FA5FCE576957890184B29B2D.torrent?title=[kickass.to]laracasts.laravel.5.from.scratch.2014)
