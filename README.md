@@ -1,6 +1,9 @@
 ### What is Charles T. King, anyway?
 Charles T. King is an organization located in Millburn, New Jersey that gives interest-free student loans to local high school students. It was named after a former superintendent of the Millburn Public School District. Because Charles T. King does not have a website yet, we are making one for them. This is the repository for said website.
 
+### Project Requrements and Notes
+Here are the [notes](https://drive.google.com/open?id=0BxEuMs2jIxWfV0VNQ1ZzZFJpUkU&authuser=0) from our meetings with @conorgil and the people from Charles T. King.
+
 Directions for Editing the Code
 -------------------------------
 We use the [Fork and Pull Model](https://help.github.com/articles/using-pull-requests/). I know what you're thinking- let me explain. First, let's look at the simplest possible method: the Shared Repository model.
@@ -49,38 +52,44 @@ Now, lets see how to accept the pull request if they end up liking it.
 5. If you don't like the changes, comment what you don't like about it.
 6. After you are done with a pull request, make sure to close the pull request
 
-[Meetings with Conor/Charles T. King](https://drive.google.com/open?id=0BxEuMs2jIxWfV0VNQ1ZzZFJpUkU&authuser=0)
-
 ### How to setup cloud9 with this project
-1. Open [your Dashboard](https://c9.io/dashboard.html)
-2. Select 'CREATE NEW WORKSPACE' and then 'Clone from URL'
-3. If you are just practicing, fork this repo and for the Source URL, use your forked repo's url.  If you are contributing to the acual site, us this repo's URL: http://github.com/Charles-T-King/website
-4. Make sure to select PHP workspace
-5. Enter the following commands via the terminal on the bottom of your screen.
+1. Fork the repository
+2. Open [your Dashboard](https://c9.io/dashboard.html) on Cloud9
+3. On the left sidebar, click on the 'website' project from the 'Projects on GitHub' tab
+4. Select PHP as the project type
+5. Wait for Cloud9 to set up the workspace
+You now have a local copy of your fork on which you can make changes.
 
+Now, you have to finish the process with a few terminal commands.
 
-``` shell
-
-
-# Edit the server config file.
+Edit the server config file
+``` bash
 sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
-# Change this line
+```
+Change this line:
+``` apache
 DocumentRoot /home/ubuntu/workspace
-# To the following. This tells the server where to find our public folder.
+```
+to the following to tell the server where to find our public folder.
+``` apache
 DocumentRoot /home/ubuntu/workspace/public
-# To save the file, "Ctrl + X", then "y" for yes and "enter"
+```
+To save the file, "Ctrl + X", then "y" for yes and "enter"
 
-# Update composer, our 3rd party dependency manager.  Sudo is used for temporary root access.
+Composer is used to install PHP packages. Make sure it is up-to-date
+``` bash
 sudo composer self-update
+```
 
-# Install all 3rd party dependencies needed for the project via composer. 
+Install all dependencies needed for the project
+``` shell
 composer install
 ```
 
-To use the database(MySQL), we need to setup your database connections. Make a .env file in your root directory.
+To use the database with MySQL, we need to setup your database connections. Make a .env file in your root directory.
 Define all the databse variables as listed in the .env.example file.  We use this as we do not share the same passwords and it is easier to collaborate.  The .env file is gitignored and does not get pushed to git so your passwords are safe to your local environment.
 
-##### Here are the default cloud9 credentials to connect MySQL:
+#### Here are the default cloud9 credentials to connect MySQL:
 * DB_HOST: 127.0.0.1
 * DB_DATABASE= c9
 * DB_USERNAME='your c9 username'
@@ -90,11 +99,45 @@ After this, open the file public/index.php and click the green run button to pro
 
 You should get a message in the browser saying "conncted sucessfully to database named c9".  If you get the message, you are all setup.  If that does not occur, check your steps and troubleshoot. If you still need help, post and issue and we'll help you.
 
-Remember to always work on the develop branch as master is production ready code.
+Tutorials and Resources
+=======================
 
-You now have this repo cloned to your c9 account.Further instruction will be given on how to contribute.
-
+Tutorials for Everyone
+----------------------
 ### Read up on these resources on how to use git effectively.
 
 [Tutorial by Atlassian, GitHub's main competitor](https://www.atlassian.com/git/tutorials/)
 [Interactive Tutorial by Github](https://try.github.io/levels/1/challenges/1) - Sign in at first to track progress.
+
+### How to Use Cloud9
+Browse [Cloud9's features](https://c9.io/#features)
+
+### Frontend Tutorials
+
+#### Languages
+##### HTML and CSS
+HTML is a markup language that contains the content of a webpage. CSS helps explain how the content should be shown, but is not needed.
+* [Codecademy's Main Course](http://www.codecademy.com/skills/make-a-website)
+* [Codecademy's Other Course](http://www.codecademy.com/tracks/web)
+
+##### JavaScript or JS
+We will use JavaScript to make webpages interactive, but it can be used for much more.
+* [Codecademy's Main Course](http://www.codecademy.com/skills/make-an-interactive-website)
+* [Codecademy's Other Course](http://www.codecademy.com/tracks/javascript)
+
+#### Frameworks
+Frameworks add a lot of features to a language.
+
+##### jQuery is a JS framework
+jQuery is used to add effects and animations to a webpage, as well as other interactions with the page's content.
+* [Codecademy's Main Course](http://www.codecademy.com/en/skills/make-an-interactive-website/topics/jquery-events/jquery-user-events)
+
+##### Bootstrap for HTML/CSS
+Bootstrap makes it easy to make parts of a website like a navigation bar, a footer, a dropdown-menu, etc.
+* [Codecademy's Main Course](http://www.codecademy.com/en/skills/make-a-website/topics/bootstrap-components/bootstrap-intro)
+
+##### Laravel Blade for HTML/CSS
+Laravel is actually a backend framework for PHP, but it comes with Blade, which is a templating language.
+* [Quick Summary](http://laravel.com/docs/5.0/templates)
+* [Laracasts Video 2015](https://laracasts.com/series/laravel-5-fundamentals/episodes/5)
+* [Laracasts Video 2013](https://laracasts.com/series/laravel-from-scratch/episodes/6)
