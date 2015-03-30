@@ -4,7 +4,7 @@
 # USE THIS COMMAND TO RUN THIS FILE:
 # ./fork-update.sh develop
 
-if [ -n "$1" ]; then # if the first argument does not exist
+if [ "$1" == " " ]; then # if the first argument does not exist
 	$branch = "develop";
 else
 	$branch = $1;
@@ -16,7 +16,9 @@ echo "Updating $branch branch";
 $owner = "Charles-T-King";
 $repo = "website";
 
+git remote add upstream https://github.com/whoever/whatever.git
+git fetch upstream
 git checkout $branch
-git pull https://github.com/$owner/$repo.git $branch
+git rebase upstream/$branch
 
 echo "Please commit the changes if you are satisfied"
