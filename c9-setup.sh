@@ -2,7 +2,7 @@
 
 # THIS SCRIPT WILL SET UP APACHE2 SO THAT THE BACKEND WORKS
 # TO RUN IT, USE THIS COMMAND:
-# ./c9-setup.sh
+# bash c9-setup.sh
 
 # make Apache2 use the public folder as the website's root directory
 	$fileDirectory = "/etc/apache2/sites-enabled/001-cloud9.conf";
