@@ -16,13 +16,32 @@
 
 # make an environment file to manage MySQL
 	# $C9_USER is your Cloud9 username
+	# there is no password because no one else can use the database
 	
 	touch .env; # make an empty file
-	echo "DB_HOST: 127.0.0.1" >> .env;
-	echo "DB_DATABASE= c9" >> .env;
-	echo "DB_USERNAME=$C9_USER" >> .env;
-	echo "DB_PASSWORD=''" >> .env; # no password
-
+	
+	# this StackOverflow thread explains what is happening: http://goo.gl/Gf9L8Q
+	printf "%s\n" "
+	APP_ENV=local
+	APP_DEBUG=true
+	APP_KEY=SomeRandomString
+	
+	DB_HOST: 127.0.0.1
+	DB_DATABASE= c9
+	DB_USERNAME=$C9_USER
+	DB_PASSWORD=
+	
+	CACHE_DRIVER=file
+	SESSION_DRIVER=file
+	QUEUE_DRIVER=sync
+	
+	MAIL_DRIVER=smtp
+	MAIL_HOST=mailtrap.io
+	MAIL_PORT=2525
+	MAIL_USERNAME=null
+	MAIL_PASSWORD=null
+	" >> .env;
+	
 # let MySQL set itself up automatically
 	$delay = 3; # in seconds, how long to let MySQL set up everything
 	mysql-ctl start;
