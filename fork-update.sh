@@ -2,23 +2,25 @@
 
 # THIS FILE UPDATES FORKS TO THE LATEST VERSION OF THE ORIGINAL REPOSITORY
 # USE THIS COMMAND TO RUN THIS FILE:
-# bash fork-update.sh
+# bash fork-update.sh develop
 
 if [ "$1" == " " ]; then # if the first argument does not exist
-	$branch = "develop";
+	branch="develop";
 else
-	$branch = $1;
+	branch=$1;
 fi
 
 echo "Updating $branch branch";
 
 # set up the variables
-$owner = "Charles-T-King";
-$repo = "website";
+owner="Charles-T-King";
+repository="website";
 
-git remote add upstream https://github.com/whoever/whatever.git
+git commit -am "Automatic commit before updating fork";
+
+git remote set-url upstream git://github.com/$owner/$repository.git
 git fetch upstream
 git checkout $branch
-git rebase upstream/$branch
+git merge upstream/$branch -m "Updated fork by adding the original's changes"
 
 echo "Please commit the changes if you are satisfied"
