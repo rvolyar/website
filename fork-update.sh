@@ -2,7 +2,7 @@
 
 # THIS FILE UPDATES FORKS TO THE LATEST VERSION OF THE ORIGINAL REPOSITORY
 # USE THIS COMMAND TO RUN THIS FILE:
-# ./fork-update.sh develop
+# bash fork-update.sh
 
 if [ -n "$1" ]; then # if the first argument does not exist
 	$branch = "develop";
