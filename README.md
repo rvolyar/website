@@ -140,7 +140,6 @@ Bootstrap makes it easy to make parts of a website like a navigation bar, a foot
 Laravel is actually a backend framework for PHP, but it comes with Blade, which is a templating language.
 * [Quick Summary](http://laravel.com/docs/5.0/templates)
 * [Laracasts Video 2015](https://laracasts.com/series/laravel-5-fundamentals/episodes/5)
-* [Laracasts Video 2013](https://laracasts.com/series/laravel-from-scratch/episodes/6)
 
 ### Backend Tutorials
 #### Languages
