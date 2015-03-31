@@ -16,7 +16,9 @@ echo "Updating $branch branch";
 owner="Charles-T-King";
 repository="website";
 
-git commit -am "Automatic commit before updating fork";
+# avoid losing your work if there are conflicts
+git add *; # add all the files
+git stash; # avoid losing your work
 
 git remote set-url upstream git://github.com/$owner/$repository.git
 git fetch upstream
@@ -24,3 +26,4 @@ git checkout $branch
 git merge upstream/$branch -m "Updated fork by adding the original's changes"
 
 echo "Please commit the changes if you are satisfied"
+echo "To undo the changes made, please type in: git stash pop"
