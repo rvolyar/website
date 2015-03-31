@@ -20,6 +20,7 @@ repository="website";
 git add *; # add all the files
 git stash; # avoid losing your work
 
+git remote add upstream git://github.com/$owner/$repository.git
 git remote set-url upstream git://github.com/$owner/$repository.git
 git fetch upstream
 git checkout $branch
