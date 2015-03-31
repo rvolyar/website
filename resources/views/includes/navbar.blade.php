@@ -1,8 +1,4 @@
-<!--USE THIS FILE BY WRITING:
 
-@include('includes.menu') 
-
--->
 
 <nav class="navbar navbar-default">
 	<div class="container"> <!--Container so it can shrink on mobile -->
