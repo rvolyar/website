@@ -1,4 +1,4 @@
-### What is Charles T. King, anyway?
+### What is Charles T. King?
 Charles T. King is an organization located in Millburn, New Jersey that gives interest-free student loans to local high school students. It was named after a former superintendent of the Millburn Public School District. Because Charles T. King does not have a website yet, we are making one for them. This is the repository for said website.
 
 ### Project Requrements and Notes
