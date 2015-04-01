@@ -99,6 +99,15 @@ After this, open the file public/index.php and click the green run button to pro
 
 You should get a message in the browser saying "conncted sucessfully to database named c9".  If you get the message, you are all setup.  If that does not occur, check your steps and troubleshoot. If you still need help, post and issue and we'll help you.
 
+### How to Update your Fork
+Open the workspace folder of your fork and run this command:
+
+``` shell
+bash fork-update.sh develop
+```
+
+Make sure that the fork-update.sh is the latest version. It will update itself
+
 Tutorials and Resources
 =======================
 
