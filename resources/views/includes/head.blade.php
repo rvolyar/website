@@ -9,3 +9,6 @@
 
 <!-- Navigation Bar CSS -->
 <link rel="stylesheet" href="stylesheets/navbar.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
