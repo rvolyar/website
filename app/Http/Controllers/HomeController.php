@@ -30,7 +30,7 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return "home page.";
+		return view('home');
 		
 		if(DB::connection()->getDatabaseName())
 	{
