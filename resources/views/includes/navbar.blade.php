@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><img alt="Brand" id="nav-logo" src="resources/logo.png"/></a>
+			<a class="navbar-brand" href="#"><img alt="Brand" id="nav-logo" src="images/favicon.png"/></a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
