@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-default">
 	<div class="container"> <!--Container so it can shrink on mobile -->
 		<div class="navbar-header">
