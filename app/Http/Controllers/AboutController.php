@@ -30,7 +30,7 @@ class AboutController extends Controller {
 	 */
 	public function index()
 	{
-		return 'About page';
+		return view('about');
 	}
 
 }
