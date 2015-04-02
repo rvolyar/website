@@ -8,12 +8,14 @@
             </div>
         </div>
         <div class="container-fluid">
-            <h1>Contact Information</h1>
+            <h1>Contact Information</h1><br>
             <h4>General Inquiries:</h4>
             <a href="mailto:charlestking.info@gmail.com">charlestking.info@gmail.com</a></br>
             <h4>Current & Past Loan Recipients:</h4>
             <a href="mailto:charlestking.treasurer@gmail.com">charlestking.treasurer@gmail.com</a></br>
-            <h4>Mail to:</h4><br>
-            Charles T. King
+            <h4>Mail to:</h4>
+            <p>Charles T. King Student Loan Fund<br>
+            P.O. Box 272<br>
+            Short Hills, NJ 07078<br></p>
         </div>
 @stop
