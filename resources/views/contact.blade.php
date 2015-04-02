@@ -7,6 +7,7 @@
                 <p>Feel free to contact us at any time with any questions you may have.</p>
             </div>
         </div>
+<<<<<<< HEAD
         <div class="col-md-5">
             <h2>General Inquiries:</h2>
             <a href="mailto:charlestking.info@gmail.com">charlestking.info@gmail.com</a></br>
@@ -19,5 +20,15 @@
         </div>
         <div class="col-md-7">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1511.9174297271727!2d-74.31204086244627!3d40.72165175657065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smillburn+education+center!5e0!3m2!1sen!2s!4v1427999114660" width="600" height="450" frameborder="0" style="border:0"></iframe>
+=======
+        <div class="container-fluid">
+            <h1>Contact Information</h1>
+            <h4>General Inquiries:</h4>
+            <a href="mailto:charlestking.info@gmail.com">charlestking.info@gmail.com</a></br>
+            <h4>Current & Past Loan Recipients:</h4>
+            <a href="mailto:charlestking.treasurer@gmail.com">charlestking.treasurer@gmail.com</a></br>
+            <h4>Mail to:</h4><br>
+            Charles T. King
+>>>>>>> 16ebcc8b944040215fea87140ac7de5526098fef
         </div>
 @stop
