@@ -32,11 +32,7 @@ class HomeController extends Controller {
 	{
 		return view('home');
 		
-		/*if(DB::connection()->getDatabaseName())
-	{
-   		echo "Connected sucessfully to database named ".DB::connection()->getDatabaseName();
-   		
-	}*/
+	
 	}
 
 }
