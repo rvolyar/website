@@ -11,8 +11,14 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', [
+    'as'=>'home', 'uses'=>'PagesController@home'
+]);
 
-Route::get('contact', 'ContactController@index');
+Route::get('contact', [
+    'as'=>'contact', 'uses'=>'PagesController@contact'
+]);
 
-Route::get('about', 'AboutController@index');
+Route::get('about', [
+    'as'=>'about', 'uses'=>'PagesController@about'
+]);
