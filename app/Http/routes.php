@@ -12,13 +12,13 @@
 */
 
 Route::get('/', [
-    'as'=>'home', 'uses'=>'HomeController@index'
+    'as'=>'home', 'uses'=>'PagesController@home'
 ]);
 
 Route::get('contact', [
-    'as'=>'contact', 'uses'=>'ContactController@index'
+    'as'=>'contact', 'uses'=>'PagesController@contact'
 ]);
 
 Route::get('about', [
-    'as'=>'about', 'uses'=>'AboutController@index'
+    'as'=>'about', 'uses'=>'PagesController@about'
 ]);
