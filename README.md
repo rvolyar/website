@@ -131,7 +131,6 @@ HTML is a markup language that contains the content of a webpage. CSS helps expl
 
 ##### JavaScript or JS
 We will use JavaScript to make webpages interactive, but it can be used for much more.
-* [Codecademy's Main Course](http://www.codecademy.com/skills/make-an-interactive-website)
 * [Codecademy's Other Course](http://www.codecademy.com/tracks/javascript)
 
 #### Frameworks
