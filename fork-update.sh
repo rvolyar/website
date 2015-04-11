@@ -23,8 +23,6 @@ git stash; # avoid losing your work
 git remote add upstream git://github.com/$owner/$repository.git
 git remote set-url upstream git://github.com/$owner/$repository.git
 git fetch upstream
-git checkout $branch
-git merge upstream/$branch -m "Updated fork by adding the original's changes"
+git rebase upstream/$branch
 
-echo "Please commit the changes if you are satisfied"
-echo "To undo the changes made, please type in: git stash pop"
+echo "Your fork is now synced with the upstream fork."
