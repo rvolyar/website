@@ -5,20 +5,20 @@
 # bash c9-setup.sh
 
 # make Apache2 use the public folder as the website's root directory
-	fileDirectory="/etc/apache2/sites-enabled/001-cloud9.conf";
-	original="DocumentRoot /home/ubuntu/workspace";
-	corrected="DocumentRoot /home/ubuntu/workspace/public";
-	
-	if grep -q "$corrected" $fileDirectory; then
-		echo "Apache2 is already setup";
-	else
-		echo "Apache2 is being configured to use the public folder";
-		sed -i "s#$original#$corrected#g" $fileDirectory; # replace the text
-	fi;
+fileDirectory="/etc/apache2/sites-enabled/001-cloud9.conf";
+original="DocumentRoot /home/ubuntu/workspace";
+corrected="DocumentRoot /home/ubuntu/workspace/public";
+if grep -q "$corrected" $fileDirectory; then # if $corrected is already there...
+	echo "Apache2 is already setup";
+else
+	echo "Apache2 is being configured to use the public/ folder";
+	sed -i "s#$original#$corrected#g" $fileDirectory; # replace the text
+	echo "Apache2 is now configured to use the public/ folder"
+fi;
 
 # install the dependencies using PHP's Composer
-	sudo composer self-update; # make sure that it's up-to-date
-	composer install; # install all dependencies
+sudo composer self-update; # make sure that it's up-to-date
+composer install; # install all dependencies
 
 # make an environment file to manage MySQL
 	# $C9_USER is your Cloud9 username
@@ -28,6 +28,7 @@
 	touch .env; # make an empty file
 	
 	# this StackOverflow thread explains what is happening: http://goo.gl/Gf9L8Q
+	# tl;dr saves the settings into the .env file
 	printf "%s\n" "
 	APP_ENV=local
 	APP_DEBUG=true
@@ -49,10 +50,11 @@
 	MAIL_PASSWORD=null
 	" >> .env;
 	
-# let MySQL set itself up automatically
-	delay=3; # in seconds, how long to let MySQL set up everything
-	mysql-ctl start;
-	sleep $delay; # give it some time to run
-	mysql-ctl stop;
+# run MySQL for moment and let it set itself up automatically
+delay=3; # in seconds, how long to let MySQL set up everything
+mysql-ctl start;
+sleep $delay; # give it some time to run
+mysql-ctl stop;
 
 echo "Setup process COMPLETE";
+echo "To start the server, run public/index.php in the right-click menu on C9";
