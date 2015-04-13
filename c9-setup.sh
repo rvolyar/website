@@ -9,7 +9,7 @@
 	original="DocumentRoot /home/ubuntu/workspace";
 	corrected="DocumentRoot /home/ubuntu/workspace/public";
 	
-	if grep -q this $fileDirectory; then
+	if grep -q "$corrected" $fileDirectory; then
 		echo "Apache2 is already setup";
 	else
 		echo "Apache2 is being configured to use the public folder";
