@@ -24,7 +24,7 @@
 	# $C9_USER is your Cloud9 username
 	# there is no password because no one else can use the database
 	
-	rm .env; # remove the current settings if they exist
+	rm .env -f; # forcefully remove the current settings file if it exists
 	touch .env; # make an empty file
 	
 	# this StackOverflow thread explains what is happening: http://goo.gl/Gf9L8Q
