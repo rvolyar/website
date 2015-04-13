@@ -4,25 +4,18 @@
 # USE THIS COMMAND TO RUN THIS FILE:
 # bash update.sh
 
-# if [ "$1" == " " ]; then # if the first argument does not exist
-# #	branch="develop";
-#else
-#	branch=$1;
-#fi
-
 echo "Updating local develop branch";
 
-# set up the variables
+# refer to the original repository NOT the fork
 owner="Charles-T-King";
 repository="website";
 
-# avoid losing your work if there are conflicts
-#git add *; # add all the files
-#git stash; # avoid losing your work
-
+# make sure the upstream (original) repo is added
 git remote add upstream git://github.com/$owner/$repository.git
 git remote set-url upstream git://github.com/$owner/$repository.git
-git fetch upstream
-git rebase upstream/develop
+
+# update the local copy of the fork
+git fetch upstream # download upstream w/o changing anything
+git rebase upstream/develop # rebase is safer and cleaner than merge
 
 echo "Your fork is now synced with the upstream fork."
