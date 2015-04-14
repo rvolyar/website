@@ -59,45 +59,10 @@ Now, lets see how to accept the pull request if they end up liking it.
 4. Select PHP as the project type
 5. Wait for Cloud9 to set up the workspace
 You now have a local copy of your fork on which you can make changes.
-
-Now, you have to finish the process with a few terminal commands.
-
-Edit the server config file
-``` bash
-sudo nano /etc/apache2/sites-enabled/001-cloud9.conf
+Before you run the server, you have to set up the backend. The c9-setup.sh script does this for you. Just run:
+```shell
+sudo bash c9-setup.sh
 ```
-Change this line:
-``` apache
-DocumentRoot /home/ubuntu/workspace
-```
-to the following to tell the server where to find our public folder.
-``` apache
-DocumentRoot /home/ubuntu/workspace/public
-```
-To save the file, "Ctrl + X", then "y" for yes and "enter"
-
-Composer is used to install PHP packages. Make sure it is up-to-date
-``` bash
-sudo composer self-update
-```
-
-Install all dependencies needed for the project
-``` shell
-composer install
-```
-
-To use the database with MySQL, we need to setup your database connections. Make a .env file in your root directory.
-Define all the databse variables as listed in the .env.example file.  We use this as we do not share the same passwords and it is easier to collaborate.  The .env file is gitignored and does not get pushed to git so your passwords are safe to your local environment.
-
-#### Here are the default cloud9 credentials to connect MySQL:
-* DB_HOST: 127.0.0.1
-* DB_DATABASE= c9
-* DB_USERNAME='your c9 username'
-* DB_PASSWORD='blank'
-
-After this, open the file public/index.php and click the green run button to proceed to run this app as a PHP/Apache server.  Open the url given to you by the server terminal. Remember there's a difference between the Apache terminal and the bash terminal.
-
-You should get a message in the browser saying "conncted sucessfully to database named c9".  If you get the message, you are all setup.  If that does not occur, check your steps and troubleshoot. If you still need help, post and issue and we'll help you.
 
 ### How to Update your Fork
 Open the workspace folder of your fork and run this command:
