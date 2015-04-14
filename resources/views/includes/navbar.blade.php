@@ -13,11 +13,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="{{ route('home') }}">Home<span class="sr-only">(current)</span></a>
+				<li class="{{ Route::is('home') ? 'active' : ''}}"><a href="{{ route('home') }}">Home<span class="sr-only">(current)</span></a>
 				</li>
-				<li><a href="{{ route('about') }}">About</a>
+				<li class="{{ Route::is('about') ? 'active' : ''}}"><a href="{{ route('about') }}">About</a>
 				</li>
-				<li><a href="{{ route('contact') }}">Contact us</a>
+				<li class="{{ Route::is('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact us</a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
