@@ -74,27 +74,26 @@ bash fork-update.sh develop
 Make sure that the fork-update.sh is the latest version. It will update itself
 
 Tutorials and Resources
-=======================
+-----------------------
 
-Tutorials for Everyone
-----------------------
-### Read up on these resources on how to use git effectively.
+### Tutorials for Everyone
+#### Read up on these resources on how to use git effectively.
 
 [Tutorial by Atlassian, GitHub's main competitor](https://www.atlassian.com/git/tutorials/)
 [Interactive Tutorial by Github](https://try.github.io/levels/1/challenges/1) - Sign in at first to track progress.
 
-### How to Use Cloud9
+#### How to Use Cloud9
 Browse [Cloud9's features](https://c9.io/#features)
 
 ### Frontend Tutorials
 
-#### Languages
-##### HTML and CSS
+##### Languages
+###### HTML and CSS
 HTML is a markup language that contains the content of a webpage. CSS helps explain how the content should be shown, but is not needed.
 * [Codecademy's Main Course](http://www.codecademy.com/skills/make-a-website)
 * [Codecademy's Other Course](http://www.codecademy.com/tracks/web)
 
-##### JavaScript or JS
+##### JavaScript AKA JS
 We will use JavaScript to make webpages interactive, but it can be used for much more.
 * [Codecademy's Other Course](http://www.codecademy.com/tracks/javascript)
 
