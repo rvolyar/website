@@ -49,12 +49,6 @@ composer install; # install all dependencies
 	MAIL_USERNAME=null
 	MAIL_PASSWORD=null
 	" >> .env;
-	
-# run MySQL for moment and let it set itself up automatically
-delay=3; # in seconds, how long to let MySQL set up everything
-mysql-ctl start;
-sleep $delay; # give it some time to run
-mysql-ctl stop;
 
 echo "Setup process COMPLETE";
 echo "To start the server, run public/index.php in the right-click menu on C9";
