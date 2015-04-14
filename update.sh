@@ -11,9 +11,10 @@ owner="Charles-T-King";
 repository="website";
 
 # make sure the upstream (original) repo is added
-git remote add upstream git://github.com/$owner/$repository.git
-git remote set-url upstream git://github.com/$owner/$repository.git
-
+if ! git remote | grep upstream > /dev/null; then
+    git remote add upstream git://github.com/$owner/$repository.git
+    git remote set-url upstream git://github.com/$owner/$repository.git
+fi
 # update the local copy of the fork
 git fetch upstream # download upstream w/o changing anything
 git rebase upstream/develop # rebase is safer and cleaner than merge
